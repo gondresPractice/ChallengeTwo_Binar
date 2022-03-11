@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<!-- Bagian Searchview dan Profile-->
+   <LinearLayout
+       android:id="@+id/layoutTop"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/main"
+       android:orientation="horizontal">
+
+
+       <SearchView
+           android:id="@+id/searchView"
+           android:layout_marginTop="10dp"
+           android:layout_width="320dp"
+           android:layout_height="40dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="8dp"
+           android:padding="5dp"
+           android:theme="@style/AppSearchView"
+           android:queryHint="@string/search"
+           android:iconifiedByDefault="false"
+           android:textAlignment="center"
+           android:background="@drawable/shape_search_view"/>
+
+       <ImageView
+           android:layout_marginTop="13dp"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginStart="5dp"
+           android:src="@drawable/ic_person"
+           android:padding="5dp"
+           android:background="@drawable/shape_person_circle"/>
+
+
+   </LinearLayout>
+
+
+
+<!--Bagian ImageView Saldo gopay,bayar,isi saldo,eksplore-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_advertice"
+       android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pay_24"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/shape_advertice_button"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fill_saldo"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/shape_advertice_button"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_explore_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="31dp"
+            android:background="@drawable/shape_advertice_button"/>
+
+    </LinearLayout>
+
+<!--    Bagian text Button dari ImageView Bayar.isi saldo, eksplore-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/advertise"
+        android:orientation="horizontal"
+        android:layout_marginTop="135dp">
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isi Saldo"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eksplor"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+<!-- Bagian saldo Gopay -->
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_advertice_content"
+        android:orientation="vertical"
+        android:layout_marginTop="88dp">
+
+       <ImageView
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="10dp"
+           android:layout_width="100dp"
+           android:layout_height="20dp"
+           android:src="@drawable/ic_gopay_logo"/>
+
+        <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp109.498"
+           android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik &amp; cek riwayat"
+            android:textColor="@color/main"/>
+    </LinearLayout>
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:layout_marginTop="107dp"
+        android:layout_marginStart="358dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_notif_badge"
+        />
+
+<!--    Bagian ImageView Main Aplikasi-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="185dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/go_ride"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape_goride"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/go_car"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shape_goride"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/go_food"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shape_gofood"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gobox"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shape_goride"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="260dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/go_mart"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape_gofood"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/go_pulsa"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shape_gopulsa"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_peduli_lindungi"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shape_gopulsa"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_icon_go_more"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp" />
+
+    </LinearLayout>
+
+<!--    Bagian Text Button Aplikasi-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="258dp">
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoRide"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoCar"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoFood"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoBox"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp">
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoMart"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GoPulsa"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check In"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lainnya"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginStart="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 193 XP lagi ada harta karun"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_marginStart="105dp"
+            android:progress="5"
+            app:indicatorColor="@color/main"
+            app:trackColor="#D1D1D1"
+            android:theme="@style/Theme.App"
+            android:layout_marginEnd="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="113dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:textSize="13dp"
+            android:layout_height="wrap_content"
+            android:text=" Harta karun bentar lagi hilang"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:layout_marginTop="405dp"
+        android:layout_marginStart="26dp"/>
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_hourglass"
+        android:layout_marginTop="435dp"
+        android:layout_marginStart="107dp"/>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_forward"
+        android:layout_marginTop="415dp"
+        android:layout_marginStart="355dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akses Cepat"
+        android:layout_marginTop="480dp"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:background="@drawable/shape_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_voucher"
+            android:background="@drawable/shape_person_circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp"
+            android:text="Ada voucher nganggur nih"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/ic_forward"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/shape_voucher_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="560dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_icon_go_gofood"
+            android:padding="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp"
+            android:text="Restoran Terdekat"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="135dp"
+            android:src="@drawable/ic_forward"/>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home" app:showAsAction="always" android:icon="@drawable/ic_icon_home_colored"/>
+    <item android:title="Promo" app:showAsAction="always" android:icon="@drawable/ic_icon_promo_stroked"/>
+    <item android:title="Pesanan" android:icon="@drawable/ic_icon_orders_stroked" />
+    <item android:title="Chat" android:icon="@drawable/ic_icon_chat_stroked"/>
+</menu>

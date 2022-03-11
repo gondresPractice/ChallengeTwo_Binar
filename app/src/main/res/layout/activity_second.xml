@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<!-- Bagian Searchview dan Profile-->
+   <LinearLayout
+       android:id="@+id/layoutTop"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:background="@color/main"
+       android:orientation="horizontal">
+
+
+       <SearchView
+           android:id="@+id/searchView"
+           android:layout_marginTop="10dp"
+           android:layout_width="220dp"
+           android:layout_height="38dp"
+           android:layout_marginStart="8dp"
+           android:padding="5dp"
+           android:theme="@style/AppSearchView"
+           android:queryHint="Cari powerbank"
+           android:iconifiedByDefault="false"
+           android:textAlignment="center"
+           android:background="@drawable/shape_search_view_tokped"/>
+
+       <ImageView
+           android:layout_marginTop="13dp"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginStart="5dp"
+           android:src="@drawable/ic_mail_tokped"
+           android:padding="5dp" />
+       <ImageView
+           android:layout_marginTop="13dp"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginStart="5dp"
+           android:src="@drawable/ic_notif_tokped"
+           android:padding="5dp" />
+       <ImageView
+           android:layout_marginTop="13dp"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginStart="5dp"
+           android:src="@drawable/ic_trolly_tokped"
+           android:padding="5dp" />
+       <ImageView
+           android:layout_marginTop="13dp"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginStart="5dp"
+           android:src="@drawable/ic_bar_tokped"
+           android:padding="5dp" />
+
+
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_saldo_tokped"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp200.000"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="13dp"
+            android:layout_height="wrap_content"
+            android:text="153.999 Coins" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Gold"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="13dp"
+            android:layout_height="wrap_content"
+            android:text="23 Kupon" />
+    </LinearLayout>
+
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="376dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_notif_badge"
+        />
+
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_gopay_tokped"
+        android:background="@drawable/shape_person_circle"/>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="210dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_badge_tokped"
+        android:background="@drawable/shape_person_circle"/>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video menarik untukmu"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat semua"
+            android:textStyle="normal"
+            android:textColor="@color/main"
+            android:layout_marginStart="120dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_poster_image"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_one" />
+
+
+
+            <ImageView
+                android:layout_marginStart="120dp"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_two" />
+
+            <ImageView
+                android:layout_marginStart="240dp"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_three" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_two"/>
+
+</RelativeLayout>
