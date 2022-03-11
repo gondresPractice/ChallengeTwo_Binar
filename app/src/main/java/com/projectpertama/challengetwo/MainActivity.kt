@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.activity_first)
 //        SearchView searchView
 //        searchView findViewById<SearchView>(R.id.searchView)
     }
