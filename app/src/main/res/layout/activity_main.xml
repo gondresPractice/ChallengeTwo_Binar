@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!-- Navigasi bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:drawableLeft="@drawable/ic_search"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Cari Produk..."
+            android:textColor="@color/abu"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"/>
+            <RelativeLayout
+                android:layout_width="9dp"
+                android:layout_height="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:backgroundTint="@color/transparent"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="38dp">
+                <Button
+                    android:background="@drawable/ic_message"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="7dp"
+                android:layout_height="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:backgroundTint="@color/transparent"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="38dp">
+                <Button
+                    android:background="@drawable/ic_notifications"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="7dp"
+                android:layout_height="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:backgroundTint="@color/transparent"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="38dp">
+                <Button
+                    android:background="@drawable/ic_cart"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/transparent"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="38dp">
+                <Button
+                    android:background="@drawable/ic_notes"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<!-- Header-->
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/header"
+    android:background="@drawable/header"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"/>
+
+<!-- E Wallet-->
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:drawableLeft="@drawable/ic_wallet"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="Rp. 100.000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"/>
+
+
+        <Button
+            android:drawableLeft="@drawable/ic_member"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="Member Gold"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+<!-- konten 1-->
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:drawableLeft="@drawable/ic_official"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/white"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"
+                android:text="Official Store"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableLeft="@drawable/ic_transaksi"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|center_horizontal"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Tagihan"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableLeft="@drawable/ic_hp"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Handphone"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Keuangan"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+<!-- Iklan-->
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/banner11"/>
+
+    </LinearLayout>
+
+<!-- konten 2-->
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="10dp"
+
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_peduli"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Peduli Lindungi"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableLeft="@drawable/ic_feed"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|center_horizontal"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Bangga Lokal"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableLeft="@drawable/ic_hp"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Live Shopping"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:drawableLeft="@drawable/ic_wishlist"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Bazar Hari ini"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+<!-- konten 3-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:text="Video Menarik untukmu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="135dp"
+            android:textColor="@color/green"
+            android:text="Lihat semua"/>
+
+    </LinearLayout>
+
+<!-- Video-->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/video"
+            android:layout_width="120dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/video2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/video"
+            android:layout_width="120dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+<!-- Bottom Navigation-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/item_bottom_nav"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        app:labelVisibilityMode="labeled"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

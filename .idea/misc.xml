@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/header.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_cart.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_feed.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_member.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_message.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_notes.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_official.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_search.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_transaksi.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_wallet.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/ic_wishlist.xml" value="0.1" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/iklan1.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/drawable/splash.xml" value="0.215" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Project/Challenges2/app/src/main/res/menu/item_bottom_nav.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
